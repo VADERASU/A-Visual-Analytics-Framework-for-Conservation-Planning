@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <title>Conservation</title>
+
+  <!-- Metadata -->
+  <meta charset='utf-8' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta content='' name='Healthy Regions Page - 2015' />
+  <meta content='' name='Marynia Kolak' />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- <script src="/js/slider_input.js"></script> -->
+  <!--  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script> -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" crossorigin="" />
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" crossorigin=""></script>
+
+
+  <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.2.0/dist/leaflet.markercluster.js"></script>
+  <!-- <script src="bundle.js"></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js"></script>
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  <script src="https://unpkg.com/d3-simple-slider@0.1.2/build/d3-simple-slider.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src='https://unpkg.com/leaflet-image@latest/leaflet-image.js'></script>
+  <script type="text/javascript" src='javascripts/view/library/leaflet_canvas_geojson.js'></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/map.css' />
+  <link rel='stylesheet' href='/stylesheets/distributionAndParallel.css' />
+  <link rel='stylesheet' href='/stylesheets/optiInput.css' />
+  <link rel='stylesheet' href='/stylesheets/resultAnalysis.css' />
+  <link rel='stylesheet' href='/stylesheets/slider.css' />
+  <link rel='stylesheet' href='https://unpkg.com/leaflet.markercluster@1.2.0/dist/MarkerCluster.css' />
+  <link rel='stylesheet' href='https://unpkg.com/leaflet.markercluster@1.2.0/dist/MarkerCluster.Default.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.css" />
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+      <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!--.leaflet-tile{border: solid black 1px;}-->
+
+  <!--The following is writen to add border of tiles on the map
+    .leaflet-tile {
+    border: solid black 1px;
+  } -->
+  <style type="text/css">
+    .chart div {
+      font: 10px sans-serif;
+      background-color: steelblue;
+      text-align: right;
+      padding: 3px;
+      margin: 1px;
+      color: white;
+    }
+
+
+
+    #squareSize {
+      margin-top: 10px;
+    }
+
+    #squareSize p {
+      font-size: small;
+      color: gray;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba( 255, 255, 255, .8) url('./stylesheets/legend/ajax-loader.gif') 50% 50% no-repeat;
+    }
+
+    /* When the body has the loading class, we turn
+      the scrollbar off with overflow:hidden */
+
+    body.loading .modal {
+      overflow: hidden;
+    }
+
+    /* Anytime the body has the loading class, our
+      modal element will be visible */
+
+    body.loading .modal {
+      display: block;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p> -->
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Conservation</span>
+    <div class="dataSelection">
+      <label class="form-check-label gridDataset">
+        <input class="form-check-input" type="radio" name="Radios" id="gridDataset" value="gridDataset"> grid dataset
+      </label>
+      <label class="form-check-label parcelDataset">
+        <input class="form-check-input" type="radio" name="Radios" id="parcelDatset" value="parcelDatset" checked> parcel
+        dataset
+      </label>
+    </div>
+    <div class = "paLayers">
+      <!-- Default inline 1-->
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="totalPA" name="inlineDefaultRadiosExample">
+        <label class="custom-control-label" for="totalPA">PA layer</label>
+      </div>
+      
+      <!-- Default inline 2-->
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="paLayer1" name="inlineDefaultRadiosExample" >
+        <label class="custom-control-label" for="paLayer1">PA layer1</label>
+      </div>
+      
+      <!-- Default inline 3-->
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="paLayer2" name="inlineDefaultRadiosExample" checked>
+        <label class="custom-control-label" for="paLayer2">PA layer2</label>
+      </div>
+    </div>
+    <div class="dropdown4attributes">
+      <div class="attrListTitle">
+        Attribute Lists
+        <div id="dropButton"></div>
+      </div>
+      <div class="attrList">
+      </div>
+    </div>
+
+  </nav>
+
+  <div class='container-fluid'>
+    <div class='row'>
+
+      <div class='col-md-7' , id="mapArea">
+        <div id="map"></div>
+        <div class="gridDiv">
+          <p>Patch size(mile)</p>
+          <div class="input-group mb-3 cellsize">
+            <input type="text" class="form-control" placeholder="1" aria-label="1" id="unit4cellsize" value=1>
+          </div>
+          <div class="input-group-append">
+            <button class="btn btn-info generateGrid" type="button" id="generateGridButton">Generate Grid</button>
+          </div>
+          <p>Current size:
+            <span id="currentUnit"></span>
+          </p>
+        </div>
+        <div class="resultDiv">
+          <div class="titleName4resultDiv">
+            <div class="consTitle4resultDiv">Constraint</div>
+            <div class="consTitle4resultDiv">Goal</div>
+          </div>
+          <!--  areIconDiv,  moneyIconDiv    -->
+          <div class="constraintLine">
+
+            <div class="resultIcon"></div>
+            <div class="line4result" id="resultConstraint">
+            </div>
+          </div>
+          <div class="horizontalLine"></div>
+          <div class="goalLine">
+
+            <div class="resultIcon"></div>
+            <div class="line4result" id="resultGoal">
+
+            </div>
+          </div>
+        </div>
+        <div class="legend2showButton"></div>
+        <div class="lengendInfo">
+        </div>
+        <div class="distriAndParallel">
+          <div class="distributionDiv"></div>
+          <div class="parallelCoorDiv">
+          </div>
+
+        </div>
+      </div>
+
+      <div class='col-md-5'>
+        <div id="interactionDiv">
+          <div class="inputofoptiDiv">
+            <div class="col-md-10">
+              <div class="harfinput leftpart">
+                <div class="proprocessingform">
+                  <p class="title4optinput">Preprocessing:</p>
+                  <div class="onelineSlider">
+                    <p>
+                      <label for="range4median">Median Ranking:</label>
+                      <input type="text" class="rangevalue" id="range4median" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                    <div class="sliderHandle" id="medianSlider"></div>
+                    <div class="maxDiv4slider" id="median_Max"></div>
+                  </div>
+                </div>
+                <div class="constrainInput">
+                  <p>Constraints:</p>
+                  <label for="minInput">Min</label>
+                  <input id="minInput"></p>
+                  <span>-</span>
+                  <label for="maxInput">Max</label>
+                  <input id="maxInput"></p>
+                </div>
+                <div class="constraintsform">
+                  <div class="form-check onelineSlider">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="costRadio" value="option1" checked>
+                    <p>
+                      <label for="range4median">Cost($):</label>
+                      <input type="text" class="rangevalue" id="range4cost" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                    <div class="sliderHandle" id="costSlider"></div>
+                    <div class="maxDiv4slider cons" id="cost_Max"></div>
+                  </div>
+                  <div class="form-check onelineSlider">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="areaRadio" value="option2">
+                    <p>
+                      <label for="range4median">Area(metre
+                        <sup>2</sup>): </label>
+                      <input type="text" class="rangevalue" id="range4area" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                    <div class="sliderHandle" id="areaSlider"></div>
+                    <div class="maxDiv4slider cons" id="area_Max"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="harfinput rightpart">
+                <p class="title4optinput">Objective function</p>
+                <div class="input-group mb-3 objFunDiv">
+                  <select class="custom-select" id="goalAttr">
+                    <option value="area" selected>Area</option>
+                    <option value="cost">Cost</option>
+                  </select>
+                </div>
+                <div class="input-group mb-3 operater4target">
+                  <select class="custom-select" id="goalDirection">
+                    <option value="Maximize" selected>Maximize</option>
+                    <option value="Minimize">Minimize</option>
+                  </select>
+                </div>
+                <button class="btn btn-info button optiButton" type="button" id="optiButtion">Optimization</button>
+              </div>
+            </div>
+            <button class="col-md-2 btn btn-info button" type="button" id="saveButton">Save</button>
+          </div>
+          <div class="resultAnalysisDiv">
+            <p class="userCollectionTitle">User's Collection</p>
+            <div id="screenshotsDiv"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modal">
+      <!-- Place at bottom of page -->
+    </div>
+    <script type="text/javascript" src='javascripts/view/library/shp.js'></script>
+    <script type='text/javascript' src='javascripts/view/attributeAnalysis/addAttrList.js'></script>
+    <script type='text/javascript' src='javascripts/view/attributeAnalysis/linechart.js'></script>
+    <script type='text/javascript' src='javascripts/view/attributeAnalysis/distribution.js'></script>
+    <script type='text/javascript' src='javascripts/view/attributeAnalysis/parallelCoordinate.js'></script>
+    <script type='text/javascript' src='javascripts/view/optiInput/slider.js'></script>
+    <script type='text/javascript' src='javascripts/view/optiInput/viewsOnMap.js'></script>
+    <script type='text/javascript' src='javascripts/view/interface.js'></script>
+    <script type='text/javascript' src='javascripts/view/attributeAnalysis/legendLayerAddRemove.js'></script>
+    <script type='text/javascript' src='javascripts/view/optiInput/form4opti.js'></script>
+    <script type='text/javascript' src='javascripts/view/userCollection/imageInteraction.js'></script>
+    <script type='text/javascript' src='javascripts/view/userCollection/pie.js'></script>
+</body>
+
+</html>
