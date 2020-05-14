@@ -1,0 +1,160 @@
+body {
+  padding: 0px 10px 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.navbar.navbar-light.bg-light {
+ /* height: 30px;*/
+  margin-bottom: 10px;
+  background-color: #a6a6a6!important;
+}
+.navbar-light .navbar-brand {
+  color: #f8f9fa;
+}
+.navbar.navbar-light.bg-light span{
+  font-size: large;
+}
+.col-md-7 {
+padding-left: 5px;
+padding-right: 0px;
+}
+.col-md-5 {
+  padding-left: 30px;
+  padding-right: 5px;
+}
+a {
+  color: #00B7FF;
+}
+.leaflet-container .leaflet-control-mouseposition {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px #bbb;
+  padding: 0 5px;
+  margin:0;
+  color: #333;
+  font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.dataSelection {
+  width: 250px;
+  height: 25px;
+}
+.form-check-label.gridDataset {
+  position: fixed;
+  right: 25%;
+}
+.form-check-label.parcelDataset {
+  position: fixed;
+  right: 18%;
+}
+#gridDataset, #parcelDatset{
+  position: absolute;
+  left: 0px;
+  top: 2px;
+}
+/* #parcelDatset{
+  position: absolute;
+  left: 0px;
+  top: 2px;
+} */
+.dropdown4attributes {
+  width: 10%;
+  height: 30px;
+  line-height: 25px;
+  position: relative;
+  right: 5%;
+  background-color: #18a2b8;
+  color: white;
+  z-index: 150;
+}
+.attrListTitle {
+      width: 60%;
+    padding: 2px;
+    margin-left: 33px;
+    height: 20px;
+}
+#dropButton {
+  width: 20px;
+  height: 20px;
+  background-image: url(./legend/down.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  float: left;    
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+}
+.attrList {
+    border: 1px solid #cccccc;
+    background: white;
+    z-index: 100;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+.attrOption {
+    width: 88%;
+    height: 24px;
+    background-color: #ececec;
+    border: 1px solid #ececec;
+    margin: 5px auto;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    color: #5a5a5a;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+}
+.attrOption:hover{
+    background-color: #18a2b85c;
+    border: 1px solid #18a2b85c;
+    color: white;
+}
+.isselected{
+    background-color: #18a2b8;
+    border: 1px solid #18a2b8;
+    color: white;
+
+}
+.dataSelection {
+  visibility: hidden;
+}
+.custom-control.custom-radio.custom-control-inline {
+  color: white;
+}
+.custom-control.custom-radio.custom-control-inline label{
+    line-height: 22px;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: #17a2b8;
+}
+.custom-control-input:active~.custom-control-label::before {
+    color: #fff;
+    background-color: #74d1e0f7;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: #17a2b8;
+}
+.tooltipsDiv4palayers {
+    width: 250px;
+    font-size: 11px;
+    border-radius: 4px;
+    background-clip: padding-box;
+    background-color: white;
+    z-index: 1000;
+    top: 22px;
+    position: absolute;
+    box-shadow: 0 0px 3px #6d6d6d;
+    padding: 5px;
+}  
+.tooltipsDiv4palayers p{
+    color: black;
+    writing-mode: horizontal-tb !important;
+    font-size: 12px !important;
+    float: none !important;
+    margin-bottom: 5px;
+  }

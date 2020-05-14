@@ -1,0 +1,148 @@
+.inputofoptiDiv {
+    height: 160px;
+    margin-bottom: 10px;
+  }
+  .inputofoptiDiv .col-md-10{
+    border: 1px dashed #1b1e21;
+    float: left;
+    height: 100%;
+    border-right: 0px;
+    padding: 4px;
+  }
+  .inputofoptiDiv .col-md-2 {
+    border-width:2px;  
+    float: left;
+    height: 100%;
+    background-color: #17a2b8;
+    color: #fff;
+    border-left: 0px;
+    border-color: #10707f;;
+  }
+  .button:hover {
+    background-color:#10707f;;
+  }
+  .harfinput {
+    padding-left: 0px;
+    float: left;
+  }
+  .harfinput.leftpart{
+    width: 60%;
+  }
+  .harfinput.rightpart{
+    width: 40%;
+  }
+  .harfinput p {
+    /* text-align: center; */
+    margin-bottom: 2px;
+    height: 17px;
+  }
+  .harfinput .title4optinput {
+    margin-bottom: 5px;
+    height: 14px;
+  }
+  .harfinput .leftpart .form-check{
+    height: 20px;
+  }
+  .harfinput .leftpart .form-check label {
+    margin-top: 4px;
+  }
+  .form-check{
+    padding-left:0rem;
+  }
+  .form-check-input{
+    left: 25px;
+    margin-top: 0rem;
+  }
+  .form-check-label {
+    margin-top: 3px;
+  }
+  .proprocessingform {
+    height: 50px;
+  }
+  .col-md-10 .sliderHandle {
+    width: 70%;
+    margin-left: 10px;
+  }
+  .input-group.mb-3{
+    font-size: 14px;
+  }
+  .input-group.mb-3 select{
+    padding: 5px;
+  }
+  .input-group.mb-3.objFunDiv {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+  }
+  .input-group.mb-3.operater4target {
+    width: 48%;
+  }
+  .btn.btn-info.button.optiButton {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .btn.btn-info.optimizationSubmit{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .toggle-handle.btn.btn-default{
+    background-color: white;
+    border-color: #e6e6e6;
+  }
+  .toggle-group label{
+    color: #1b1e21;
+  }
+  .label4optiInput{
+    float: left
+  }
+  /* .label4optiInput{
+    font-size: 10px;
+  } */
+  .onelineSlider{
+    width: 100%;
+    height: 40px;
+  }
+  .onelineSlider p {
+    text-align: left;
+    margin-left: 30px;
+  }
+  .maxDiv4slider {
+    position: absolute;
+    left: 45.5%;
+    top: 37px;
+    width: 42px;
+    height: 20px;
+    color:#f6931f
+  }
+  .maxDiv4slider.cons {
+    left: 76%;
+    top: 14px;
+  }
+  .ui-slider-handle.ui-corner-all.ui-state-default.ui-state-hover, .ui-slider-handle.ui-corner-all.ui-state-default.ui-state-active{
+    background: #17a2b8;
+    border:#17a2b8;
+  }
+  .ui-slider-handle.ui-corner-all.ui-state-default.ui-state-hover.ui-state-focus.ui-state-active {
+    background: #17a2b8;
+    border:#17a2b8;
+  }
+  .constrainInput {
+    height: 25px;
+  }
+  .constrainInput p {
+    display: inline;
+  }
+  .constrainInput label {
+    background-color: #18a2b8;
+    color: white;
+    font-size: 10px;
+    padding: 2px;
+    border-radius: 4px;
+  }
+  .constrainInput input {
+    width: 60px;
+    height: 18px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin-top: 5px;
+  }

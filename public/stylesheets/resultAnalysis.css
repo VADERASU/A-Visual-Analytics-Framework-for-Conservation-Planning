@@ -1,0 +1,45 @@
+.userCollectionTitle {
+  text-align: center;
+}
+.resultAnalysisDiv {
+    height: 859px;
+    border: 1px dashed #1b1e21;
+    padding: 10px;
+  }
+#screenshotsDiv {
+  overflow-y: scroll;
+  height: 98%;
+}
+#screenshotsDiv .row4result{
+  width: 99%;
+  height: 110px;
+}
+#screenshotsDiv .imageDiv{
+  width: 152px;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 5px;
+  float: left;
+}
+#screenshotsDiv .controlRowDiv{
+  float: left;
+  width:15px;
+  height: 15px;
+  background-image: url("./legend/delete_light.png");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+#screenshotsDiv .controlRowDiv:hover{
+  background-image: url("./legend/delete.png");
+}
+#screenshotsDiv .glyphDiv {
+  float: left;
+
+}
+#screenshotsDiv .finalgcDiv {
+  float: left;
+
+}
+.resultAnalysisDiv p {
+  margin-bottom:0;
+}

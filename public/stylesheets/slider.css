@@ -1,0 +1,39 @@
+.ticks4slider {
+  font: 10px sans-serif;
+}
+
+.track4slider,
+.track4slider-inset,
+.track4slider-overlay {
+  stroke-linecap: round;
+}
+
+.track4slider {
+  stroke: #000;
+  stroke-opacity: 0.3;
+  stroke-width: 9px;
+}
+
+.track4slider-inset {
+  stroke: #ddd;
+  stroke-width: 10px;
+}
+.brushedline-inset {
+    stroke-linecap: round;
+    stroke: #495057;
+    stroke-width: 10px;
+}
+
+.track4slider-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  stroke: transparent;
+  cursor: crosshair;
+}
+
+.handle4slider {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+}

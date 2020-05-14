@@ -1,0 +1,237 @@
+
+  .tooltipsDiv {
+    width: 250px;
+    font-size: 11px;
+    border-radius: 4px;
+    background-clip: padding-box;
+    background-color: white;
+    z-index: 1000;
+    top: 45px;
+    position: absolute;
+    box-shadow: 0 0px 3px #6d6d6d;
+  }
+  .tooltipsDiv p{
+    writing-mode: horizontal-tb !important;
+    font-size: 12px !important;
+    float: none !important;
+  }
+  .distriAndParallel {
+    margin-top: 10px;
+    position: absolute;
+    height: 44%;
+    width: 101.5%;
+    border: 1px dashed #1b1e21;
+    padding: 4px;
+  }
+  .distributionDiv {
+    position: absolute;
+    height: 100%;
+  }
+  .attributeController {
+    width: 9%;
+    float: left;
+    margin: 0px;
+    height: calc(100% - 10px);
+    padding: 1px;
+    position: absolute;
+    width: 92px;
+    padding: 5px 2px 5px 2px;
+    height: 438px;
+    border: 1px solid white;
+    border-style: dashed;
+    border-radius: 3px;
+  }
+    .attributeController:hover{
+      border: 1px solid #676767;
+
+    border-style: dashed;
+    border-radius: 3px;
+    } 
+
+
+
+  .attributeController .guidofAttr {
+      height: 40px;
+  }
+  .attributeController p {
+        line-height: 36px;
+    float: left;
+    font-weight: 700;
+    margin-right: 2px;        margin-left: 8px;
+
+    font-size: 11px;
+    /* padding: 7px; */
+    margin: 0;
+  }
+  /* .twoCheckboxes {
+    float: left;
+  } */
+  .toggle.btn {
+    min-width: 0px !important;
+    min-height: 0px !important;
+    border-radius: 2px !important;
+  }
+  .toggle.btn.btn-danger.off, .toggle.btn.btn-success {
+    width: 40px !important;
+    height: 17px !important;
+    margin-bottom: 2px;
+  }
+  .btn-success {
+    background-color: #17a2b8!important;
+    color: #fff!important;
+    border-color: #17a2b8!important;
+  }
+  .btn-success:hover {
+    color: black!important;
+    background-color: #e6e6e6!important;
+    border-color: #e6e6e6!important;
+  }
+  .btn.btn-success.toggle-on{
+    font-size: 0.5rem;
+    padding-left: 3px;
+    padding-top: 0px;
+    line-height: 13px;
+  }
+  .btn-danger {
+    color: black!important;
+    background-color: #e6e6e6!important;
+    border-color: #e6e6e6!important;
+  }
+  .btn.btn-danger.toggle-off {
+    font-size: 0.5rem;
+    padding-left: 10px;
+    padding-top: 0px;
+    line-height: 13px;
+  }
+  .toggle-handle {
+    height: 172% !important;
+    padding: 5px;
+  }
+  .palayerlegend #palegend{
+    list-style-image: url('./legend/pa.png');
+  }
+  .palayerlegend #paGridlegend{
+    list-style-image: url('./legend/paGrid.png');
+  }
+  .malayerlegend #malegend{
+    list-style-image: url('./legend/ma.png');
+  }
+  .malayerlegend #maGridlegend{
+    list-style-image: url('./legend/maGrid.png');
+  }
+  .rdlayerlegend #rdlegend{
+    list-style-image: url('./legend/rd.png');
+  }
+  .rdlayerlegend #rdGridlegend{
+    list-style-image: url('./legend/rdGrid.png');
+  }
+  .hiilayerlegend #hiilegend{
+    list-style-image: url('./legend/hiilegend.png');
+  }
+  .hydologylayerlegend #hydologylegend{
+    list-style-image: url('./legend/hydlegend.png');
+  }
+  .Amphibianlayerlegend #Amphibianlegend{
+    list-style-image: url('./legend/bioLegend_amp.png');
+  }
+  .Treelayerlegend #Treelegend{
+    list-style-image: url('./legend/bioLegend_amp.png');
+  }
+  .Birdlayerlegend #Birdlegend{
+    list-style-image: url('./legend/bioLegend_amp.png');
+  }
+  .mammallayerlegend #mammallegend{
+    list-style-image: url('./legend/bioLegend_amp.png');
+  }
+  .reptilelayerlegend #reptilelegend{
+    list-style-image: url('./legend/bioLegend_amp.png');
+  }
+  .fishlayerlegend #fishlegend{
+    list-style-image: url('./legend/bioLegend_amp.png');
+  }
+  .costlayerlegend #costlegend{
+    list-style-image: url('./legend/bioLegend_amp.png');
+  }
+  .direction4MR {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-image: url("./legend/sort-asce.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
+  .direction4MR.desc{
+     background-image: url("./legend/sort-desc.png");
+  }
+  .describe4dire {
+    display: inline;
+  }
+  .directionUl {
+    list-style: none;
+    margin-left: -45px;
+  }
+ .filterValue {
+     width: 90px;
+     height: 60px;
+ }
+ .parallelCoorDiv {
+  margin-top: 9%;
+  position: absolute;
+}
+
+ .parallelCoorDiv svg {
+  font: 10px sans-serif;
+}
+
+.parallelCoorDiv .background path {
+  fill: none;
+  stroke: #ddd;
+   stroke-opacity: .4;  
+  shape-rendering: crispEdges;
+}
+
+.parallelCoorDiv .foreground path {
+  fill: none;
+  stroke: steelblue;
+   stroke-opacity: .7;
+}
+
+.parallelCoorDiv .brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+
+  shape-rendering: crispEdges;
+}
+
+.parallelCoorDiv .axis line,
+.parallelCoorDiv .axis path {
+  fill: none;
+  shape-rendering: crispEdges;
+}
+
+.parallelCoorDiv .axis text {
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+  cursor: move;
+}
+
+.sortIcon {
+  margin-top: 8px;
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-image: url("./legend/sort-asce.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+.sortIcon.desc {
+  background-image: url("./legend/sort-desc.png");
+}
+.sortPDiv{
+width: 92px;
+    height: 40px;
+    float: left;
+}
+.twoCheckboxes{
+       position: absolute;
+    left: 46px;
+}

@@ -1,0 +1,160 @@
+#map {
+    height: 560px;
+    /* height: 850px; */
+    border: 1px dashed #1b1e21;
+    position: relative;
+    width: 101.8%;
+    /* width: 151.8%; */
+  }
+.gridDiv {    
+    width: 140px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 1000;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    background-clip: padding-box;
+    background-color: white;
+  }
+  .gridDiv p{
+    font-size: 11px;
+    margin-bottom: 2px;
+  }
+  .resultDiv {
+   width: 140px;
+    height: 100px;
+    position: absolute;
+    top: 440px;
+    right: 30px;
+    z-index: 1000;
+    border: 1px dashed rgba(0,0,0,.9);
+    border-radius: 4px;
+    background-clip: padding-box;
+    background-color: white;
+  }
+  .input-group.mb-3.cellsize {
+    float: left;
+    width: 40px;
+    height: 30px;
+    margin-left: 5px;
+  }
+  #generateGridButton {
+    float: left;
+    width: 87px;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .horizontalLine {
+    width: 100%;
+    margin-top: 5px;
+    border: .5px dashed rgba(0,0,0,.9);
+  }
+  .resultDiv .constraintSlider, .goalSlider{
+    width: 120px;
+    height: 45px;
+  }
+  .moneyIconDiv {
+    float: left;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    background-image: url("./legend/money.png");
+    background-repeat: no-repeat;
+  }
+  .areIconDiv {
+    float: left;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    background-image: url("./legend/usMap.png");
+    background-repeat: no-repeat;
+  }
+  /* .leaflet-zoom-animated .leaflet-interactive {
+    stroke-width: 2;
+    stroke-dasharray: 3,3;
+    stroke: #6c757d;
+    stroke-opacity: 0.8;
+  }
+  .leaflet-zoom-animated .leaflet-interactive:first-child{
+    stroke-width: 0px;
+    fill: #e9e9e9;
+    fill-opacity: 0.5;
+  } */
+ .resultIcon {
+   width: 20px;
+   height: 20px;
+   background-repeat: no-repeat;
+   float: left;
+   margin-top: 10px;
+ }
+ .constraintLine, .goalLine {
+  height: 45%;
+  margin-left: 10px;
+ }
+ .line4result {
+   float: left;
+   margin-top: -3px;
+ }
+.resultTitle{
+  margin: 0px;
+  font-size: 10px;
+  text-align: center;
+}
+.leaflet-draw-toolbar.leaflet-bar {
+  display: none
+}
+.leaflet-draw-toolbar.leaflet-bar.leaflet-draw-toolbar-top {
+  display: block
+}
+.titleName4resultDiv {
+  width: 20px;
+  height: 103%;
+  position: absolute;
+  left: -19px;
+  top: -2px;
+  background-color: #a6a6a6;
+}
+.consTitle4resultDiv {
+    font-size: 10px;
+    font-weight: 700;
+    width: 55px;
+    height: 45px;
+    transform: rotate(-90deg);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.lengendInfo {
+    width: 130px;
+    height: 122px;
+    position: absolute;
+    top: 415px;
+    left: 15px;
+    z-index: 1000;
+    border-radius: 4px;
+    background-clip: padding-box;
+    background-color: white;
+    border: 2px solid rgba(0,0,0,0.2);
+}
+.legend2showButton {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 130px;
+    left: 16px;
+    z-index: 1000;
+    border-radius: 4px;
+    background-clip: padding-box;
+    background-color: white;
+    border: 2px solid rgba(0,0,0,0.2);
+    background-image: url("./legend/legend2show.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+.legend2showButton:hover {
+   background-color: #f4f4f4;
+}
