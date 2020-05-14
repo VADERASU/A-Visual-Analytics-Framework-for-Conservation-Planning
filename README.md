@@ -8,6 +8,7 @@ MongoDB version: 3.4.10
 ## Description of each folder
 
 ## Data source and process
+For the high resolution, we split the land of US to 30 * 30 meter patches. While the parcel will be the unit to purchase for users. 
 
 ## Install
 
