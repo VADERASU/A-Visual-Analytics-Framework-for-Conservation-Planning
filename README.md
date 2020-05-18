@@ -8,8 +8,12 @@ MongoDB version: 3.4.10
 ## Description of each folder
 
 ## Data source and process
-The research target of the project is the US. The data source for the US map is the shapefile [US Map](https://catalog.data.gov/dataset/tiger-line-shapefile-2017-nation-u-s-current-state-and-equivalent-national). \
-For the US map, there are 12 land attributes involved in the project. We classify them to three categories,  
+The research area of the project is the US. The data source for the US map is the shapefile [US Map](https://catalog.data.gov/dataset/tiger-line-shapefile-2017-nation-u-s-current-state-and-equivalent-national). \
+For the US map, there are 12 land attributes involved for users to get the best purchase portfolio. We take the Montana as the example. We classify them into three categories,  land user layers, physical geospatial layer, and biodiversity layers. Here is the list of the 12 land attributes and their corresponding data source. \
+* Land User Layers
+  * Distance to the protected area (PA): the average distance of a parcel to its nearest protected area(s). The data source is the [protected area of each state](https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis/gap/science/pad-us-data-download?qt-science_center_objects=0#qt-science_center_objects) in US. 
+
+
 
 ## Install
 
