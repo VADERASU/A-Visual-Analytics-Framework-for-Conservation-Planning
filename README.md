@@ -8,7 +8,8 @@ MongoDB version: 3.4.10
 ## Description of each folder
 
 ## Data source and process
-For the high resolution, we split the land of US to 30 * 30 meter patches. While the parcel will be the unit to purchase for users. 
+The research target of the project is the US. The data source for the US map is the shapefile [US Map](https://catalog.data.gov/dataset/tiger-line-shapefile-2017-nation-u-s-current-state-and-equivalent-national). \
+For the US map, there are 12 land attributes involved in the project. We classify them to three categories,  
 
 ## Install
 
