@@ -19,7 +19,7 @@ For the US map, there are 12 land attributes involved for users to get the best 
   * Distance to highway (HW): the average distance of a parcel to its nearest highway(s). The data source is the label[primary and secondary roads by state](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2017&layergroup=Roads).
   * Human influence index (HII): HII values range from 0 to 64 and measure the direct human influence on terrestrial ecosystems. The average of the HII values within a parcel. The data source  is the [HII of North America](https://sedac.ciesin.columbia.edu/data/set/wildareas-v2-last-of-the-wild-geographic/data-download).
   * Cost per Square meter(COST): total cost per square meter. The data source is the [land cost of Montana] (https://landgrid.com/reports/parcels).
-*  Physical Geospatial Layer
+* Physical Geospatial Layer
  * Distance to hydrology areda(HY): the minimum distance from the center of the parcel to the nearest hydrology area. The data source is the [hydrology area by state](http://prd-tnm.s3-website-us-west-2.amazonaws.com/?prefix=StagedProducts/Hydrography/NHD/State/HighResolution/Shape/).
 * Biodiversity Layers
 
