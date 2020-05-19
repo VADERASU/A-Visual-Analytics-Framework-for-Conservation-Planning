@@ -23,10 +23,10 @@ For the US map, there are 12 land attributes involved for users to get the best 
     > (6). Distance to hydrology areda(HY): the minimum distance from the center of the parcel to the nearest hydrology area. The data source is the [hydrology area by state](http://prd-tnm.s3-website-us-west-2.amazonaws.com/?prefix=StagedProducts/Hydrography/NHD/State/HighResolution/Shape/). 
 * Biodiversity Layers: the data source for this kind of layer comes from [Biodiversity Mapping](https://biodiversitymapping.org/wordpress/index.php/download/).
     > (7). Richness of trees (TREE): the total species richness of trees in the parcel.\
-    > (8). Richness of birds (BIRD): the total species richness of birds in the parcel.
-    > (9). Richness of fishes (FISH): the total species richness of fishes in the parcel.
-    > (10). Richness of amphibians (AM): the total species richness of amphibians in the parcel.
-    > (11). Richness of mammals (MM): the total species richness of mammals in the parcel.
+    > (8). Richness of birds (BIRD): the total species richness of birds in the parcel.\
+    > (9). Richness of fishes (FISH): the total species richness of fishes in the parcel.\
+    > (10). Richness of amphibians (AM): the total species richness of amphibians in the parcel.\
+    > (11). Richness of mammals (MM): the total species richness of mammals in the parcel.\
     > (12) .Richness of reptiles (RP): the total species richness of reptiles in the parcel.
 
 
