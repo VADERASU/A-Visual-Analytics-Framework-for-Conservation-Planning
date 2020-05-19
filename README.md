@@ -16,18 +16,18 @@ For the US map, there are 12 land attributes involved for users to get the best 
 * Land User Layers
     > (1). Distance to the protected area (PA): the average distance of a parcel to its nearest protected area(s). The data source is the [protected area of each state](https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis/gap/science/pad-us-data-download?qt-science_center_objects=0#qt-science_center_objects) in US. \
     > (2). Distance to a metro area (MA): the average distance of a parcel to its nearest metro area(s). The data source is the label[metro area of Montana](http://geoinfo.msl.mt.gov/Home/msdi/administrative_boundaries).\
-    > 3.Distance to highway (HW): the average distance of a parcel to its nearest highway(s). The data source is the label[primary and secondary roads by state](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2017&layergroup=Roads).\
-    > 4.Human influence index (HII): HII values range from 0 to 64 and measure the direct human influence on terrestrial ecosystems. The average of the HII values within a parcel. The data source  is the [HII of North America](https://sedac.ciesin.columbia.edu/data/set/wildareas-v2-last-of-the-wild-geographic/data-download).\
-    > 5.Cost per Square meter(COST): total cost per square meter. The data source is the [land cost of Montana] (https://landgrid.com/reports/parcels).\
+    > (3). Distance to highway (HW): the average distance of a parcel to its nearest highway(s). The data source is the label[primary and secondary roads by state](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2017&layergroup=Roads).\
+    > (4). Human influence index (HII): HII values range from 0 to 64 and measure the direct human influence on terrestrial ecosystems. The average of the HII values within a parcel. The data source  is the [HII of North America](https://sedac.ciesin.columbia.edu/data/set/wildareas-v2-last-of-the-wild-geographic/data-download).\
+    > (5). Cost per Square meter(COST): total cost per square meter. The data source is the [land cost of Montana] (https://landgrid.com/reports/parcels).\
 * Physical Geospatial Layer
     > (6). Distance to hydrology areda(HY): the minimum distance from the center of the parcel to the nearest hydrology area. The data source is the [hydrology area by state](http://prd-tnm.s3-website-us-west-2.amazonaws.com/?prefix=StagedProducts/Hydrography/NHD/State/HighResolution/Shape/). 
 * Biodiversity Layers: the data source for this kind of layer comes from [Biodiversity Mapping](https://biodiversitymapping.org/wordpress/index.php/download/).
-    > (7). Richness of trees (TREE): the total species richness of trees in the parcel.
-    > 8.Richness of birds (BIRD): the total species richness of birds in the parcel.
-    > 9.Richness of fishes (FISH): the total species richness of fishes in the parcel.
-    > 10.Richness of amphibians (AM): the total species richness of amphibians in the parcel.
-    > 11.Richness of mammals (MM): the total species richness of mammals in the parcel.
-    > 12.Richness of reptiles (RP): the total species richness of reptiles in the parcel.
+    > (7). Richness of trees (TREE): the total species richness of trees in the parcel.\
+    > (8). Richness of birds (BIRD): the total species richness of birds in the parcel.
+    > (9). Richness of fishes (FISH): the total species richness of fishes in the parcel.
+    > (10). Richness of amphibians (AM): the total species richness of amphibians in the parcel.
+    > (11). Richness of mammals (MM): the total species richness of mammals in the parcel.
+    > (12) .Richness of reptiles (RP): the total species richness of reptiles in the parcel.
 
 
 
