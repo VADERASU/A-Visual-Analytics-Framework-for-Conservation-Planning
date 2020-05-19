@@ -32,6 +32,7 @@ For the US map, there are 12 land attributes involved for users to get the best 
 
 
 ## Install
+git clone the repository to your local computer, and download and unzip the extra foulders 'node modules' and 'images' in the [link](https://drive.google.com/drive/folders/1RLI7bu3ESEwGlcD8Epc_ogtuBZRMpnhf?usp=sharing). The two extra folders are too big to upload. Therefore, I compress them and put them in the google drive for the download.
 
 ## Avaiable website to play the system
 
