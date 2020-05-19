@@ -14,14 +14,16 @@ MongoDB version: 3.4.10
 The research area of the project is the US. The data source for the US map is the shapefile [US Map](https://catalog.data.gov/dataset/tiger-line-shapefile-2017-nation-u-s-current-state-and-equivalent-national). \
 For the US map, there are 12 land attributes involved for users to get the best purchase portfolio. We take the Montana as the example. We classify them into three categories,  land user layers, physical geospatial layer, and biodiversity layers. Here is the list of the 12 land attributes and their corresponding data source. \
 * Land User Layers
-  * Distance to the protected area (PA): the average distance of a parcel to its nearest protected area(s). The data source is the [protected area of each state](https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis/gap/science/pad-us-data-download?qt-science_center_objects=0#qt-science_center_objects) in US. 
-  * Distance to a metro area (MA): the average distance of a parcel to its nearest metro area(s). The data source is the label[metro area of Montana](http://geoinfo.msl.mt.gov/Home/msdi/administrative_boundaries).
-  * Distance to highway (HW): the average distance of a parcel to its nearest highway(s). The data source is the label[primary and secondary roads by state](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2017&layergroup=Roads).
-  * Human influence index (HII): HII values range from 0 to 64 and measure the direct human influence on terrestrial ecosystems. The average of the HII values within a parcel. The data source  is the [HII of North America](https://sedac.ciesin.columbia.edu/data/set/wildareas-v2-last-of-the-wild-geographic/data-download).
-  * Cost per Square meter(COST): total cost per square meter. The data source is the [land cost of Montana] (https://landgrid.com/reports/parcels).
+  1. Distance to the protected area (PA): the average distance of a parcel to its nearest protected area(s). The data source is the [protected area of each state](https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis/gap/science/pad-us-data-download?qt-science_center_objects=0#qt-science_center_objects) in US. 
+  2. Distance to a metro area (MA): the average distance of a parcel to its nearest metro area(s). The data source is the label[metro area of Montana](http://geoinfo.msl.mt.gov/Home/msdi/administrative_boundaries).
+  3. Distance to highway (HW): the average distance of a parcel to its nearest highway(s). The data source is the label[primary and secondary roads by state](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2017&layergroup=Roads).
+  4. Human influence index (HII): HII values range from 0 to 64 and measure the direct human influence on terrestrial ecosystems. The average of the HII values within a parcel. The data source  is the [HII of North America](https://sedac.ciesin.columbia.edu/data/set/wildareas-v2-last-of-the-wild-geographic/data-download).
+  5. Cost per Square meter(COST): total cost per square meter. The data source is the [land cost of Montana] (https://landgrid.com/reports/parcels).
+  
 * Physical Geospatial Layer
- * Distance to hydrology areda(HY): the minimum distance from the center of the parcel to the nearest hydrology area. The data source is the [hydrology area by state](http://prd-tnm.s3-website-us-west-2.amazonaws.com/?prefix=StagedProducts/Hydrography/NHD/State/HighResolution/Shape/).
+ 6. Distance to hydrology areda(HY): the minimum distance from the center of the parcel to the nearest hydrology area. The data source is the [hydrology area by state](http://prd-tnm.s3-website-us-west-2.amazonaws.com/?prefix=StagedProducts/Hydrography/NHD/State/HighResolution/Shape/).
 * Biodiversity Layers
+ 7. 
 
 
 
