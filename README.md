@@ -27,7 +27,7 @@ For the US map, there are 12 land attributes involved for users to get the best 
     > (9). Richness of fishes (FISH): the total species richness of fishes in the parcel.\
     > (10). Richness of amphibians (AM): the total species richness of amphibians in the parcel.\
     > (11). Richness of mammals (MM): the total species richness of mammals in the parcel.\
-    > (12). Richness of reptiles (RP): the total species richness of reptiles in the parcel.\
+    > (12). Richness of reptiles (RP): the total species richness of reptiles in the parcel.
     
 'ProcessData' folder includes the files to deal with different kinds of data sources to get the corresponding attributes of each parcel. We also use QGIS to generate the tiles of the map for attribute visualization on the map. The generated images are in the 'image' folder. All the processed data needs to import to MongoDB for the geospatial queries. The 'schema' folder includes the information of the database.
 
@@ -38,6 +38,7 @@ For the US map, there are 12 land attributes involved for users to get the best 
 Change the URL of the database to your local URL in the 'router' folder.
 * Run 'npm install', then 'npm start' to start the project
 * Open the website in at least 1280 x 1024 screen. The code does not consider the scalability. The issue will be solved in future work. 
+
 The data size for the project is huge. The process phase is complicated and needs parallel computing, which still takes a long time to finish the data processing. The shapefiles of the row data usually contain a lot of issues, such as the bad designed spatial data. For these issues, the developer needs to deal with them one by one. I suggest users to use my available website to play the system, rather than build their own website. 
 
 ## Avaiable website to play the system
