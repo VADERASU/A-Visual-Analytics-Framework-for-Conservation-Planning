@@ -6,8 +6,8 @@ Node version: 7.10.1 \
 MongoDB version: 3.4.10
 
 ## Nomenclature
-* Patch: To get the high resolution, we first split the land to 30 * 30 meter^2 patches.\
-* Parcel: The purchasing unit of the land is 'parcel'. For some land attribute, we have to aggregate the attribute value of the patches falling into the parcel. \
+* Patch: To get the high resolution, we first split the land to 30 * 30 meter^2 patches.
+* Parcel: The purchasing unit of the land is 'parcel'. For some land attribute, we have to aggregate the attribute value of the patches falling into the parcel. 
 * portfolio: To achieve the users' goal, the system will help them to generate the purchasing portfolios within a variety of constraints. 
 
 ## Data source and process
@@ -33,16 +33,20 @@ For the US map, there are 12 land attributes involved for users to get the best 
 
 
 ## Install
-git clone the repository to your local computer, and download and unzip the extra foulders 'node modules' and 'images' in the [link](https://drive.google.com/drive/folders/1RLI7bu3ESEwGlcD8Epc_ogtuBZRMpnhf?usp=sharing). The two extra folders are too big to upload. Therefore, I compress them and put them in the google drive for the download.\
-Process the downloaded data and import them to the MongoDB based on the infromation in 'schema' folder.\
-Change the url of the database to your local url in the 'router' folder.\
-Run 'npm install', then 'npm start' to start the project.\
-Open the website in at least 1280 x 1024 screen. The code does not consider the scale. The issue will be solved in the future work. \
-
+* git clone the repository to your local computer, and download and unzip the extra foulders 'node modules' and 'images' in the [link](https://drive.google.com/drive/folders/1RLI7bu3ESEwGlcD8Epc_ogtuBZRMpnhf?usp=sharing). The two extra folders are too big to upload. Therefore, I compress them and put them in the google drive for the download.
+* Process the downloaded data and import them to the MongoDB based on the information in the 'schema' folder.
+Change the URL of the database to your local URL in the 'router' folder.
+* Run 'npm install', then 'npm start' to start the project
+* Open the website in at least 1280 x 1024 screen. The code does not consider the scalability. The issue will be solved in future work. 
+The data size for the project is huge. The process phase is complicated and needs parallel computing, which still takes a long time to finish the data processing. The shapefiles of the row data usually contain a lot of issues, such as the bad designed spatial data. For these issues, the developer needs to deal with them one by one. I suggest users to use my available website to play the system, rather than build their own website. 
 
 ## Avaiable website to play the system
+The [Conservation Planning System](http://104.196.253.120:13000/) is available now for users to play for generating their own purchasing portfolio with a variety of constraints. Please use a large screen to open the website.
 
 ## Demo of case study
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Contact Us
 If have any problem when install or run the system, please contact us at rzhan100@asu.edu.
