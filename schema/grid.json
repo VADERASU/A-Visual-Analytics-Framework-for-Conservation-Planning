@@ -1,25 +1,4 @@
-{
-	"_id" : ObjectId("59c42ef1569039ca0223be43"),
-	"id" : 6,
-	"coordinates" : [
-		[
-			-93.75532739536771,
-			39.98185999680402
-		],
-		[
-			-93.75532739536771,
-			39.981590200322245
-		],
-		[
-			-93.75497529598594,
-			39.98159019978958
-		],
-		[
-			-93.75497529459568,
-			39.98185999627135
-		]
-	]
-}
+//The database name is 'eco_project'. There are two collections under the database, 'MTParcel_layer1and2' and 'userGrids'.
 /****** collections 'MTParcel_layer1and2': record the 12 land attributes and size  of the parcels in Montana ******/
 {
 	"_id" : ObjectId("5b9b39b683f92167e0aa296b"),
