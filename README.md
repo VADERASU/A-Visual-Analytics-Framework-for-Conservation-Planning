@@ -5,10 +5,10 @@ The system helps conservation planners to develop portfolios with a variety of c
 Node version: 7.10.1 \
 MongoDB version: 3.4.10
 
-## Description of each folder
-
 ## Nomenclature
-
+Patch: To get the high resolution, we first split the land to 30 * 30 meter^2 patches.\
+Parcel: The purchasing unit of the land is 'parcel'. To some land attribute, we have to aggregate the attribute value of the patches falling into the parcel. \
+portfolio: To reach the users' goal, the system will help them to generate the purchasing portfolios within a variety of constraints. 
 
 ## Data source and process
 The research area of the project is the US. The data source for the US map is the shapefile [US Map](https://catalog.data.gov/dataset/tiger-line-shapefile-2017-nation-u-s-current-state-and-equivalent-national). \
