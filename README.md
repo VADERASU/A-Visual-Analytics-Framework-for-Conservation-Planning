@@ -44,7 +44,7 @@ The data size for the project is huge. The process phase is complicated and need
 The [Conservation Planning System](http://104.196.253.120:13000/) is available now for users to play for generating their own purchasing portfolio with a variety of constraints. Please use a large screen to open the website.
 
 ## Demo of case study
-<a href="https://youtu.be/NU5QoRY3ZhE" target="_blank"></a>
+<a href="https://youtu.be/NU5QoRY3ZhE" target="_blank">Demo Video</a> provides two cases to introduce the usage of the system. 
 
 ## Contact Us
 If have any problem when install or run the system, please contact us at rzhan100@asu.edu.
