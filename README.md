@@ -12,7 +12,7 @@ MongoDB version: 3.4.10
 
 ## Data source and process
 The research area of the project is the US. The data source for the US map is the shapefile [US Map](https://catalog.data.gov/dataset/tiger-line-shapefile-2017-nation-u-s-current-state-and-equivalent-national). \
-For the US map, there are 12 land attributes involved for users to get the best purchase portfolio. For the project, we take Montana as demo state. We classify these land attributes into three categories,  land user layers, physical geospatial layer, and biodiversity layers. Here is the list of the 12 land attributes and their corresponding data source. \
+For the US map, there are 12 land attributes involved for users to get the best purchase portfolio. For the project, we take Montana as demo state. We classify these land attributes into three categories,  land user layers, physical geospatial layer, and biodiversity layers. Here is the list of the 12 land attributes and their corresponding data source. 
 * Land User Layers
     > (1). Distance to the protected area (PA): the average distance of a parcel to its nearest protected area(s). The data source is the [protected area of each state](https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis/gap/science/pad-us-data-download?qt-science_center_objects=0#qt-science_center_objects) in US. \
     > (2). Distance to a metro area (MA): the average distance of a parcel to its nearest metro area(s). The data source is the label[metro area of Montana](http://geoinfo.msl.mt.gov/Home/msdi/administrative_boundaries).\
@@ -44,9 +44,7 @@ The data size for the project is huge. The process phase is complicated and need
 The [Conservation Planning System](http://104.196.253.120:13000/) is available now for users to play for generating their own purchasing portfolio with a variety of constraints. Please use a large screen to open the website.
 
 ## Demo of case study
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="https://youtu.be/NU5QoRY3ZhE" target="_blank"></a>
 
 ## Contact Us
 If have any problem when install or run the system, please contact us at rzhan100@asu.edu.
