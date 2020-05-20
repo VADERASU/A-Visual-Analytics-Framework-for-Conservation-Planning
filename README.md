@@ -6,13 +6,13 @@ Node version: 7.10.1 \
 MongoDB version: 3.4.10
 
 ## Nomenclature
-Patch: To get the high resolution, we first split the land to 30 * 30 meter^2 patches.\
-Parcel: The purchasing unit of the land is 'parcel'. To some land attribute, we have to aggregate the attribute value of the patches falling into the parcel. \
-portfolio: To reach the users' goal, the system will help them to generate the purchasing portfolios within a variety of constraints. 
+* Patch: To get the high resolution, we first split the land to 30 * 30 meter^2 patches.\
+* Parcel: The purchasing unit of the land is 'parcel'. For some land attribute, we have to aggregate the attribute value of the patches falling into the parcel. \
+* portfolio: To achieve the users' goal, the system will help them to generate the purchasing portfolios within a variety of constraints. 
 
 ## Data source and process
 The research area of the project is the US. The data source for the US map is the shapefile [US Map](https://catalog.data.gov/dataset/tiger-line-shapefile-2017-nation-u-s-current-state-and-equivalent-national). \
-For the US map, there are 12 land attributes involved for users to get the best purchase portfolio. We take the Montana as the example. We classify them into three categories,  land user layers, physical geospatial layer, and biodiversity layers. Here is the list of the 12 land attributes and their corresponding data source. \
+For the US map, there are 12 land attributes involved for users to get the best purchase portfolio. For the project, we take Montana as demo state. We classify these land attributes into three categories,  land user layers, physical geospatial layer, and biodiversity layers. Here is the list of the 12 land attributes and their corresponding data source. \
 * Land User Layers
     > (1). Distance to the protected area (PA): the average distance of a parcel to its nearest protected area(s). The data source is the [protected area of each state](https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis/gap/science/pad-us-data-download?qt-science_center_objects=0#qt-science_center_objects) in US. \
     > (2). Distance to a metro area (MA): the average distance of a parcel to its nearest metro area(s). The data source is the label[metro area of Montana](http://geoinfo.msl.mt.gov/Home/msdi/administrative_boundaries).\
@@ -27,12 +27,18 @@ For the US map, there are 12 land attributes involved for users to get the best 
     > (9). Richness of fishes (FISH): the total species richness of fishes in the parcel.\
     > (10). Richness of amphibians (AM): the total species richness of amphibians in the parcel.\
     > (11). Richness of mammals (MM): the total species richness of mammals in the parcel.\
-    > (12) .Richness of reptiles (RP): the total species richness of reptiles in the parcel.
-
+    > (12). Richness of reptiles (RP): the total species richness of reptiles in the parcel.\
+    
+'ProcessData' folder includes the files to deal with different kinds of data sources to get the corresponding attributes of each parcel. We also use QGIS to generate the tiles of the map for attribute visualization on the map. The generated images are in the 'image' folder. All the processed data needs to import to MongoDB for the geospatial queries. The 'schema' folder includes the information of the database.
 
 
 ## Install
-git clone the repository to your local computer, and download and unzip the extra foulders 'node modules' and 'images' in the [link](https://drive.google.com/drive/folders/1RLI7bu3ESEwGlcD8Epc_ogtuBZRMpnhf?usp=sharing). The two extra folders are too big to upload. Therefore, I compress them and put them in the google drive for the download.
+git clone the repository to your local computer, and download and unzip the extra foulders 'node modules' and 'images' in the [link](https://drive.google.com/drive/folders/1RLI7bu3ESEwGlcD8Epc_ogtuBZRMpnhf?usp=sharing). The two extra folders are too big to upload. Therefore, I compress them and put them in the google drive for the download.\
+Process the downloaded data and import them to the MongoDB based on the infromation in 'schema' folder.\
+Change the url of the database to your local url in the 'router' folder.\
+Run 'npm install', then 'npm start' to start the project.\
+Open the website in at least 1280 x 1024 screen. The code does not consider the scale. The issue will be solved in the future work. \
+
 
 ## Avaiable website to play the system
 
