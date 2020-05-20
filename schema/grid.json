@@ -20,3 +20,219 @@
 		]
 	]
 }
+/****** collections 'MTParcel_layer1and2': record the 12 land attributes and size  of the parcels in Montana ******/
+{
+	"_id" : ObjectId("5b9b39b683f92167e0aa296b"),
+	"type" : "Feature",
+	"properties" : {
+		"PARCELID" : "18097804101010000",
+		"COUNTYCD" : 18,
+		"GISAcres" : 629.820753949,
+		"TaxYear" : 2018,
+		"PropertyID" : 1324351,
+		"Assessment" : "000EX38046",
+		"Township" : "01 N",
+		"Range" : "15 W",
+		"Section" : "04",
+		"LegalDescr" : "S04, T01 N, R15 W, ACRES 629.727, ALL",
+		"Subdivisio" : null,
+		"Certificat" : null,
+		"AddressLin" : null,
+		"AddressL_1" : null,
+		"CityStateZ" : null,
+		"PropAccess" : "0",
+		"LevyDistri" : "18-0010-16",
+		"PropType" : "EP - Exempt Property",
+		"Continuous" : 0,
+		"FallowAcre" : 0,
+		"FarmsiteAc" : 0,
+		"ForestAcre" : 599.144,
+		"GrazingAcr" : 0,
+		"WildHayAcr" : 0,
+		"IrrigatedA" : 0,
+		"NonQualAcr" : 0,
+		"TotalAcres" : 629.727,
+		"TotalBuild" : 0,
+		"TotalLandV" : 125223,
+		"TotalValue" : 125223,
+		"OwnerName" : "USDA FOREST SERVICE",
+		"OwnerAddre" : "OFFICE OF REGIONAL FORESTER",
+		"OwnerAdd_1" : "NORTHERN REG. HQTRS",
+		"OwnerAdd_2" : null,
+		"OwnerCity" : "MISSOULA",
+		"OwnerState" : "MT",
+		"OwnerZipCo" : "59801",
+		"CareOfTaxp" : null,
+		"SHAPE_Leng" : 6386.21965954,
+		"SHAPE_Area" : 2548794.16308,
+		"center" : [
+			-113.47195594089291,
+			45.864490524934844
+		],
+		"metroAver" : 1269.6598467962697,
+		"roadAver" : 12783.095068973107,
+		"averageHII" : 9,
+		"averagebird" : 174,
+		"averagefish" : 23,
+		"averagemammal" : 66,
+		"averagereptile" : 4,
+		"averagetree" : 25,
+		"averageamphibian" : 7,
+		"averHyDist" : 11727.92239746706,
+		"cost" : 125223,
+		"area" : 2548794.16308,
+		"costAver" : 0.049130291419326975,
+		"layer1paDist" : 137.86361228261975,
+		"layer2paDist" : 137.86361228261975
+	},
+	"geometry" : {
+		"type" : "MultiPolygon",
+		"coordinates" : [
+			[
+				[
+					[
+						-113.48230424770328,
+						45.85735722265499
+					],
+					[
+						-113.48231996817887,
+						45.86821269393445
+					],
+					[
+						-113.48232545445904,
+						45.87162319164927
+					],
+					[
+						-113.47714537550077,
+						45.871623194331356
+					],
+					[
+						-113.4719652984305,
+						45.87162319646177
+					],
+					[
+						-113.46678522058671,
+						45.87162319723308
+					],
+					[
+						-113.46160514458597,
+						45.87162319745299
+					],
+					[
+						-113.46160101609607,
+						45.86821267036344
+					],
+					[
+						-113.46158924126506,
+						45.85735722939614
+					],
+					[
+						-113.48230424770328,
+						45.85735722265499
+					]
+				]
+			]
+		]
+	}
+}
+
+/*********** collections 'userGrids': record the information of the drawn rectangle by users. *********/
+{
+	"_id" : ObjectId("5ce5dd3b7acfbc4d618a415d"),
+	"type" : "Feature",
+	"properties" : {
+		"center" : [
+			-108.22051811999746,
+			47.521168415602595
+		],
+		"metroAver" : 21000,
+		"paAver" : 2970.650130664356,
+		"roadAver" : 21000,
+		"averageHII" : 8,
+		"averagebird" : 155,
+		"averagefish" : 34,
+		"averagemammal" : 49,
+		"averagereptile" : 12,
+		"averagetree" : 10,
+		"averageamphibian" : 5,
+		"averHyDist" : 6497.559817640402,
+		"cost" : 8832,
+		"area" : 971997.868701,
+		"costAver" : 0.00908643967687222,
+		"userDefinedGridInfo" : {
+			"bbox" : [
+				-108.18242519326238,
+				47.519055620971265,
+				-108.51061870905299,
+				47.39834920035926
+			],
+			"cellside" : null,
+			"searchArea" : 399969293.4191503
+		}
+	},
+	"geometry" : {
+		"type" : "MultiPolygon",
+		"coordinates" : [
+			[
+				[
+					[
+						-108.20880851115328,
+						47.52148873750047
+					],
+					[
+						-108.20880797877506,
+						47.52051152799253
+					],
+					[
+						-108.20880632727811,
+						47.51786602881848
+					],
+					[
+						-108.21414985157702,
+						47.517876800557296
+					],
+					[
+						-108.21949323867736,
+						47.51788759381739
+					],
+					[
+						-108.22483662360123,
+						47.51789832010033
+					],
+					[
+						-108.23018013487479,
+						47.51790916083111
+					],
+					[
+						-108.23019093629703,
+						47.52153257758345
+					],
+					[
+						-108.2302018698876,
+						47.525156081437004
+					],
+					[
+						-108.22485244552757,
+						47.52514527456566
+					],
+					[
+						-108.21950315621827,
+						47.52513422169923
+					],
+					[
+						-108.21949826461369,
+						47.52151086567224
+					],
+					[
+						-108.21415318642279,
+						47.52149996789308
+					],
+					[
+						-108.20880851115328,
+						47.52148873750047
+					]
+				]
+			]
+		]
+	}
+}
